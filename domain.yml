@@ -1,0 +1,62 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - service_providing
+  - required_documents
+  - time_required
+  - service_cost
+  - service_provider
+  - approvals
+
+  - current_security_guards
+  - change_of_security_personnel
+  - additional_security_personnel
+  - contact_number_change_of_security_personnel
+
+
+responses:
+  utter_category:
+  - text: "Categories"
+    buttons:
+    - title: "Service providing"
+      payload: "/service_providing"
+    - title: "Required Documents"
+      payload: "/required_documents"
+    - title: "Time required"
+      payload: "/time_required"
+    - title: "Service Cost"
+      payload: "/service_cost"
+    - title: "Service Provider"
+      payload: "/service_provider"
+    - title: "Approvals"
+      payload: "/approvals"
+
+  utter_service_providing:
+  - text: "Service providing"
+    buttons:
+    - title: "How to change the current security guards?"
+      payload: "/current_security_guards"
+    - title: "How do we communicate to request a change of security personnel? "
+      payload: "/change_of_security_personnel"
+    - title: "What form must be filled out to request additional security personnel? "
+      payload: "/additional_security_personnel"
+    - title: "What is the contact number to request a change of security personnel? "
+      payload: "/contact_number_change_of_security_personnel"
+
+  utter_current_security_guards:
+  - text: "current security guards"
+
+  utter_change_of_security_personnel:
+  - text: "we communicate to request a change of security personnel"
+
+  utter_additional_security_personnel:
+  - text: "request additional security personnel"
+
+  utter_contact_number_change_of_security_personnel:
+  - text: "contact number to request a change of security personnel"
+   
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

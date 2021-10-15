@@ -1,0 +1,118 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: service_providing
+  examples: |
+    - service_providing
+    - Service Providing
+    - Service providng
+    - service provide
+    - servicing providing
+    - servicing provide
+    - provide service
+    - providing service
+    - Providing Service
+
+- intent: required_documents
+  examples: |
+    - required documents
+    - Required Documents
+    - required doc
+    - requirement_douments
+    - Requirments documents
+    - require documents
+    - requiring doc
+    - documents requirements
+    - doc required
+    - document requiring
+
+
+- intent: time_required
+  examples: |
+    - time required
+    - Time requiring
+    - Time requiring
+    - time require
+    - Time requires
+    - required time
+    - requiring time
+    - require time
+
+- intent: service_cost
+  examples: |
+    - service cost
+    - service_cost
+    - service_cost
+    - service Costing
+    - servicing cost
+    - cost service
+    - costing Service
+
+- intent: service_provider
+  examples: |
+    -  provider
+    -  Provider
+    -  Provider
+    -  pRovider
+
+- intent: approvals
+  examples: |
+    - approvals
+    - Approvals
+    - Approval
+    - approval
+
+- intent: current_security_guards
+  examples: |
+    - How to change the current security guards?
+    - how to change the current security guard?
+    - how to change current security guards
+    - how to Change Current guards?
+
+- intent: change_of_security_personnel
+  examples: |
+    - how do we communicate to request a change of security personnel?
+    - How do we communicate request change of security personnal?
+    - how do we communicate to request chage of security person
+
+- intent: additional_security_personnel
+  examples: |
+    - what form must be filled out to request additional security personnel?
+    - what form be filled out to request addintional security personnel
+    - what form must be filled to request  security personnel
+
+- intent: contact_number_change_of_security_personnel
+  examples: |
+    - what is the contact number to request a change of security personnel
+    - what is the contact number to request chage security personnel?
+    - what the contact number ro required chage of security person?

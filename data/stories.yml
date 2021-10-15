@@ -1,0 +1,22 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_category
+  - intent: service_providing
+  - action: utter_service_providing
+
+- story: service providing
+  steps:
+  - intent: current_security_guards
+  - action: utter_current_security_guards
+  - intent: change_of_security_personnel
+  - action: utter_change_of_security_personnel
+  - intent: additional_security_personnel
+  - action: utter_additional_security_personnel
+  - intent: change_of_security_personnel
+  - action: utter_contact_number_change_of_security_personnel
+
